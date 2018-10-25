@@ -1,0 +1,19 @@
+{
+  "name": "vueBlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "d": "bash deploy.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-task-lists": "^2.1.1"
+  }
+}

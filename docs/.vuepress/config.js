@@ -20,7 +20,6 @@ module.exports = {
 		lastUpdated: 'Last Updated',
 		date_format: 'yyyy-MM-dd HH:mm:ss',
 		nav: [
-			{ text: '主页', link: '/' },
 			{ text: '记录', link: '/blog/JavaScript/' },
 			{ text: '关于', link: '/about/' },
 			{

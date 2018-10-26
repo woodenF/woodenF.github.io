@@ -1,6 +1,6 @@
 module.exports = {
 	// theme: 'yubisaki',
-	title: 'HOME', 
+	title: 'Kyle',
 	description: `woodenF's blog`,
 	head: [
 		['link', { rel: 'icon', href: `/favicon.ico` }]
@@ -20,20 +20,25 @@ module.exports = {
 		lastUpdated: 'Last Updated',
 		date_format: 'yyyy-MM-dd HH:mm:ss',
 		nav: [
-			{text: 'Home', link: '/'},
-			{text: 'About', link: '/about/'},
-			{text: 'Github', items: [{
-				text: 'GitHub地址',  link: 'https://github.com/woodenF'
-			}]}
+			{ text: '主页', link: '/' },
+			{ text: '记录', link: '/blog/JavaScript/' },
+			{ text: '关于', link: '/about/' },
+			{
+				text: 'Github', items: [{
+					text: 'GitHub地址', link: 'https://github.com/woodenF'
+				}]
+			}
 		],
 		sidebar: [
-			{
-				title: '标题',
-				children: [
-					'/blog/one',
-					'/blog/two'
-				]
-			}
+		'/about/',
+		'/blog/JavaScript/',
+		{
+			title: 'JavaScript',
+			link: '/blog/JavaScript/',
+			children: [
+				'/blog/JavaScript/设计模式'
+			]
+		}
 		]
 	},
 	markdown: {
@@ -46,7 +51,7 @@ module.exports = {
 		config: md => {
 			// 使用更多 markdown-it 插件！
 			md.use(require('markdown-it-task-lists'))
-			.use(require('markdown-it-imsize'), { autofill: true })
+				.use(require('markdown-it-imsize'), { autofill: true })
 		}
 	},
 	// postcss: {

@@ -168,9 +168,9 @@ const proxyMult = (function() {
 proxyMult(1, 2, 3, 4)
 ```
 
-##### Tip
+::: warning Tip
 在开发时候不要先去猜测是否需要使用代理模式，如果发现直接使用某个对象不方便时，再来优化不迟
-
+:::
 
 ## 命令模式
 命令模式与策略模式有些类似，在JavaScript中它们都是隐式的。

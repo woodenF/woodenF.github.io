@@ -20,8 +20,8 @@ module.exports = {
 		lastUpdated: 'Last Updated',
 		date_format: 'yyyy-MM-dd HH:mm:ss',
 		nav: [
-			{ text: '记录', link: '/blog/JavaScript/' },
-			{ text: '关于', link: '/about/' },
+			{ text: '记录', link: '/about/记录.md' },
+			{ text: '关于', link: '/about/index.md' },
 			{
 				text: 'Github', items: [{
 					text: 'GitHub地址', link: 'https://github.com/woodenF'
@@ -29,16 +29,28 @@ module.exports = {
 			}
 		],
 		sidebar: [
-		'/about/',
-		'/blog/JavaScript/',
-		{
-			title: 'JavaScript',
-			link: '/blog/JavaScript/',
-			children: [
-				'/blog/JavaScript/设计模式'
-			]
-		}
-		]
+			// '/about/',
+			// '/blog/JavaScript/',
+			// {
+			// 	title: 'JavaScript',
+			// 	link: '/blog/JavaScript/',
+			// 	children: [
+			// 		'/blog/JavaScript/设计模式'
+			// 	]
+			// }
+			'/blog/JavaScript/设计模式/',
+			'/blog/JavaScript/迷宫生成/',
+			// {
+			// 	title: 'JavaScript深入系列',
+			// 	children: [
+			// 		'/blog/JavaScript深入/执行上下文栈/'
+			// 	]
+			// }
+		],
+		serviceWorker: {
+			updatePopup: true
+		},
+		displayAllHeaders: true
 	},
 	markdown: {
 		anchor: {

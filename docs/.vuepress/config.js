@@ -15,7 +15,7 @@ module.exports = {
 		background: `/img/`,
 		github: 'woodenF',
 		// logo: '/img/logo.png',
-		accentColor: '#ac3e40',
+		accentColor: '#ac3e40', 
 		per_page: 6,
 		lastUpdated: 'Last Updated',
 		date_format: 'yyyy-MM-dd HH:mm:ss',
@@ -28,29 +28,21 @@ module.exports = {
 				}]
 			}
 		],
-		sidebar: [
-			// '/about/',
-			// '/blog/JavaScript/',
-			// {
-			// 	title: 'JavaScript',
-			// 	link: '/blog/JavaScript/',
-			// 	children: [
-			// 		'/blog/JavaScript/设计模式'
-			// 	]
-			// }
-			'/blog/JavaScript/设计模式/',
-			'/blog/JavaScript/迷宫生成/',
-			// {
-			// 	title: 'JavaScript深入系列',
-			// 	children: [
-			// 		'/blog/JavaScript深入/执行上下文栈/'
-			// 	]
-			// }
-		],
+		sidebar: {
+		'/blog/JavaScript/':[{
+			title: 'JavaScript',
+			collapsable: false,
+			children: [
+				'设计模式/',
+				'迷宫生成/',
+				'复杂判断/',
+				'前端工程化/Webpack4.x入门/'
+			]
+		}]},
 		serviceWorker: {
 			updatePopup: true
 		},
-		displayAllHeaders: true
+		displayAllHeaders: false
 	},
 	markdown: {
 		anchor: {

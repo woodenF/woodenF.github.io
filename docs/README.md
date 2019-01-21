@@ -1,11 +1,12 @@
 ---
 home: true
-heroImage: /img/home.jpg
+heroImage: /img/home2.jpg
 actionText: Get Started →
 actionLink: /about/记录
 ---
 <style>
 img {
-    width: 90%;
+    max-width: 100%;
+    height: 100%;
 }
 </style>

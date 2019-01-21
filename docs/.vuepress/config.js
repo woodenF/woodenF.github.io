@@ -23,9 +23,7 @@ module.exports = {
 			{ text: '记录', link: '/about/记录.md' },
 			{ text: '关于', link: '/about/index.md' },
 			{
-				text: 'Github', items: [{
-					text: 'GitHub地址', link: 'https://github.com/woodenF'
-				}]
+				text: 'Github', link: 'https://github.com/woodenF'
 			}
 		],
 		sidebar: {

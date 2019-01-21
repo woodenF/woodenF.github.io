@@ -1,4 +1,8 @@
-
+---
+{
+  tags: ['JavaScript', '设计模式']
+}
+---
 # JavaScript设计模式
 > JavaScript中常见设计模式整理 [原文地址](https://juejin.im/post/5afe6430518825428630bc4d)
 ## 单例模式

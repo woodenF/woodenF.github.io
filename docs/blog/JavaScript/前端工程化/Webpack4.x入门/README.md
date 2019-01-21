@@ -1,6 +1,6 @@
 ---
 {
-  tags: ['webpack', '构建工具']
+  tags: ['JavaScript', 'webpack', '构建工具']
 }
 ---
 # Webpack4.x入门

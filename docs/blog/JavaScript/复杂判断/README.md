@@ -1,4 +1,8 @@
-
+---
+{
+  tags: ['JavaScript']
+}
+---
 # JavaScript复杂判断的更优雅写法
 > [原文地址](https://juejin.im/post/5bdfef86e51d453bf8051bf8)
 #### 前提

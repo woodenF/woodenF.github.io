@@ -1,7 +1,7 @@
 module.exports = {
 	// theme: 'yubisaki',
 	title: 'Kyle',
-	description: `woodenF's blog`,
+	description: `以我观物，故物皆着我之色彩`,
 	head: [
 		['link', { rel: 'icon', href: `/favicon.ico` }]
 	],
@@ -17,8 +17,8 @@ module.exports = {
 		// logo: '/img/logo.png',
 		accentColor: '#ac3e40', 
 		per_page: 6,
-		lastUpdated: 'Last Updated',
-		date_format: 'yyyy-MM-dd HH:mm:ss',
+		// lastUpdated: 'Last Updated',
+		// date_format: 'yyyy-MM-dd HH:mm:ss',
 		nav: [
 			{ text: '记录', link: '/about/记录.md' },
 			{ text: '关于', link: '/about/index.md' },
@@ -36,6 +36,7 @@ module.exports = {
 				'设计模式/',
 				'迷宫生成/',
 				'复杂判断/',
+				'数独生成/',
 				'前端工程化/Webpack4.x入门/'
 			]
 		}]},

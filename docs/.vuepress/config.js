@@ -35,7 +35,8 @@ module.exports = {
 				'迷宫生成/',
 				'复杂判断/',
 				'数独生成/',
-				'前端工程化/Webpack4.x入门/'
+				'前端工程化/Webpack4.x入门/',
+				'VSCode插件/'
 			]
 		}]},
 		serviceWorker: {

@@ -1,14 +1,14 @@
 ---
 {
-  tags: ['JavaScript']
+tags: ['JavaScript']
 }
 ---
 # JavaScript复杂判断的更优雅写法
 > [原文地址](https://juejin.im/post/5bdfef86e51d453bf8051bf8)
-#### 前提
+## 前提
 我们编写js代码时经常遇到复杂逻辑判断的情况，通常大家可以用if/else或者switch来实现多个条件判断，但这样会有个问题，随着逻辑复杂度的增加，代码中的if/else/switch会变得越来越臃肿，越来越看不懂，那么如何更优雅的写判断逻辑。
 
-#### 举个例子
+## 举个例子
 ``` javascript
 /**
 * 按钮点击事件
@@ -283,7 +283,7 @@ const onButtonClick = (identity, status) => {
 ```
 也就是说利用数组循环的特性，符合正则条件的逻辑都会被执行，那就可以同时执行公共逻辑和单独逻辑。
 
-#### 总结
+## 总结
 本文已经教了你8种逻辑判断写法，包括: 
 * if / else
 * switch

@@ -27,16 +27,23 @@ module.exports = {
 			}
 		],
 		sidebar: {
-		'/blog/JavaScript/':[{
+		'/blog/':[{
 			title: 'JavaScript',
-			collapsable: false,
+			collapsable: true,
 			children: [
-				'设计模式/',
-				'迷宫生成/',
-				'复杂判断/',
-				'数独生成/',
-				'前端工程化/Webpack4.x入门/',
-				'VSCode插件/'
+				'JavaScript/design',
+				'JavaScript/maze',
+				'JavaScript/judge',
+				'JavaScript/sudoku',
+				'JavaScript/Webpack4.x',
+				'JavaScript/VSCodePlugin'
+			]
+		}, {
+			title: 'JavaScript深入',
+			collapsable: true,
+			children: [
+				'JavaScript深入/',
+				'JavaScript深入/从原型到原型链'
 			]
 		}]},
 		serviceWorker: {

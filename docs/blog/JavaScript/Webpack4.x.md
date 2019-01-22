@@ -16,7 +16,7 @@ npm init
 再在该文件夹下新建`dist`文件夹以及`src`文件夹,`dist`文件夹下新建`index.html`文件，`src`文件夹下新建main.js文件以及`test.js`文件
 
 项目目录结构:  
-![示例图](./one.png) 
+![示例图](./webpack.png) 
 
 #### 安装webpack
 ``` base

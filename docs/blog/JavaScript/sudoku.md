@@ -4,17 +4,17 @@
 }
 ---
 # 数独生成
-> 之前写过一个数独生成程序，发现比想象中的逻辑复杂，现在用一种更简单的方式来实现  
+> 之前写过一个数独生成程序，发现比想象中的逻辑复杂，现在用一种更简单的方式来实现
 
 效果如下图,样式文件由css编写而成,这里不做赘述，主要讲怎么生成一个简单的数独数组
-![示例图](./test.png)
+![示例图](./sudoku.png)
 
 ### 思路
-因为之前使用java写过一个数独生成程序，大致的思路就是暴力生成，通过记录每一步的行为,在无数可填时回退生成过程，效率极低  
+因为之前使用java写过一个数独生成程序，大致的思路就是暴力生成，通过记录每一步的行为,在无数可填时回退生成过程，效率极低
 所以这次换一个方式来生成，大致的思路就是以一个数字为基准，以行为标准在每行填入这个数字，满足每行每列每宫有且仅有一个数字的要求
 
 ### 工具类的实现
-新建``` util.js ```文件,用以编写数独生成中需要使用到的工具函数  
+新建``` util.js ```文件,用以编写数独生成中需要使用到的工具函数
 
 编写``` makeRow ```函数以及``` makeMatrix ```,用以初始化单行数独数组以及完整的九宫格数独数组
 ``` js
@@ -57,7 +57,7 @@ const boxToolkit = {
             boxIndex: Math.floor(rowIndex / 3) * 3 + Math.floor(colIndex / 3),
             cellIndex: rowIndex % 3 * 3 + colIndex % 3
         }
-    }, 
+    },
     /**
      * 获得宫数据
      * @param {*} matrix 当前矩阵数据
@@ -81,7 +81,7 @@ const boxToolkit = {
 ...
     /**
      * 检查指定位置是否可以填写数字
-     * @param {*} matrix 当前数组矩阵 
+     * @param {*} matrix 当前数组矩阵
      * @param {*} n 待填写的数字
      * @param {*} rowIndex 横向坐标
      * @param {*} colIndex 纵向坐标
@@ -100,7 +100,7 @@ const boxToolkit = {
         }
         return true;
     }
-``` 
+```
 再将两个对象暴露出来以供外界调用
 ``` js
 export default class Toolkit {
@@ -145,7 +145,7 @@ fillRow(n, rowIndex) {
   if(rowIndex > 8) return true;
   const row = this.matrix[rowIndex];
   const orders = this.orders[rowIndex];
-  for(let i = 0; i < 9; i++) {  
+  for(let i = 0; i < 9; i++) {
     const colIndex = orders[i];
     if(row[colIndex]) {
       continue;

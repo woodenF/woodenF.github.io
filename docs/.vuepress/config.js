@@ -42,8 +42,8 @@ module.exports = {
 			title: 'JavaScript深入',
 			collapsable: true,
 			children: [
-				'JavaScript深入/',
-				'JavaScript深入/从原型到原型链'
+				'JavaScript深入/从原型到原型链',
+				'JavaScript深入/call和apply的模拟实现'
 			]
 		}]},
 		serviceWorker: {

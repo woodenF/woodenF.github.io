@@ -869,7 +869,7 @@ let Event = (function(){
 })();
 
 Event.listen('click', function(type) {
-    console.log('event: ' + type +' click'); 
+    console.log('event: ' + type +' click');
 });
 
 Event.trigger('click' , 'button');

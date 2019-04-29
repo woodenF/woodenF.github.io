@@ -43,7 +43,8 @@ module.exports = {
 			collapsable: true,
 			children: [
 				'JavaScript深入/从原型到原型链',
-				'JavaScript深入/call和apply的模拟实现'
+				'JavaScript深入/call和apply的模拟实现',
+				'JavaScript深入/JavaScript的事件循环'
 			]
 		}]},
 		serviceWorker: {

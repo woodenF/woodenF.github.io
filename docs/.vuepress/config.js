@@ -1,7 +1,7 @@
 module.exports = {
 	// theme: 'yubisaki',
 	title: 'Kyle',
-	description: `以我观物，故物皆着我之色彩`,
+	description: `此时正当修行时`,
 	head: [
 		['link', { rel: 'icon', href: `/favicon.ico` }]
 	],

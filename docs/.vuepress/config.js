@@ -5,9 +5,9 @@ module.exports = {
 	head: [
 		['link', { rel: 'icon', href: `/favicon.ico` }]
 	],
-	base: '/',
+	base: '/docs/src',
 	repo: 'https://github.com/woodenF/blog',
-	dest: './docs/dist',
+	dest: './docs/src',
 	ga: '',
 	serviceWorker: true,
 	evergreen: true,

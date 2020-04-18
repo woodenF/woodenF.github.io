@@ -1,8 +1,3 @@
-const getJavascript = function() {
-	const data = require.context('../blog/JavaScript', false, /\.md$/)
-	console.log(data)
-}
-getJavascript()
 module.exports = {
 	// theme: 'yubisaki',
 	title: 'Kyle',
@@ -12,7 +7,7 @@ module.exports = {
 	],
 	base: '/',
 	repo: 'https://github.com/woodenF/blog',
-	dest: './docs/.vuepress/dist',
+	dest: './docs/dist',
 	ga: '',
 	serviceWorker: true,
 	evergreen: true,

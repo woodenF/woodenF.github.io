@@ -1,3 +1,8 @@
+const getJavascript = function() {
+	const data = require.context('../blog/JavaScript', false, /\.md$/)
+	console.log(data)
+}
+getJavascript()
 module.exports = {
 	// theme: 'yubisaki',
 	title: 'Kyle',
@@ -21,7 +26,6 @@ module.exports = {
 		// date_format: 'yyyy-MM-dd HH:mm:ss',
 		nav: [
 			{ text: '记录', link: '/about/记录.md' },
-			{ text: '关于', link: '/about/index.md' },
 			{
 				text: 'Github', link: 'https://github.com/woodenF'
 			}

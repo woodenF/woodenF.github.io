@@ -1,8 +1,8 @@
 ---
-home: true
-heroImage: /img/home2.jpg
-actionText: Get Started →
-actionLink: /about/记录
+home: true  
+heroImage: /img/home2.jpg  
+actionText: Get Started →  
+actionLink: /about/记录  
 ---
 <style>
 img {

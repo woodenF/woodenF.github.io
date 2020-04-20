@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ESlint的代码风格配置 | Kyle</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/docs/src/favicon.ico">
+    <meta name="description" content="此时正当修行时">
+    <link rel="preload" href="/docs/src/assets/css/0.styles.a9221b09.css" as="style"><link rel="preload" href="/docs/src/assets/js/app.a5a14a4f.js" as="script"><link rel="preload" href="/docs/src/assets/js/2.85084c8c.js" as="script"><link rel="preload" href="/docs/src/assets/js/19.54674d97.js" as="script"><link rel="prefetch" href="/docs/src/assets/js/10.9ea76c4a.js"><link rel="prefetch" href="/docs/src/assets/js/11.c1f76f10.js"><link rel="prefetch" href="/docs/src/assets/js/12.8c57afea.js"><link rel="prefetch" href="/docs/src/assets/js/13.86a71a8d.js"><link rel="prefetch" href="/docs/src/assets/js/14.fe5c5ab8.js"><link rel="prefetch" href="/docs/src/assets/js/15.29652af1.js"><link rel="prefetch" href="/docs/src/assets/js/16.59f250bb.js"><link rel="prefetch" href="/docs/src/assets/js/17.6555629d.js"><link rel="prefetch" href="/docs/src/assets/js/18.805e0c35.js"><link rel="prefetch" href="/docs/src/assets/js/20.5843b9f0.js"><link rel="prefetch" href="/docs/src/assets/js/21.95013bd9.js"><link rel="prefetch" href="/docs/src/assets/js/3.adbf761b.js"><link rel="prefetch" href="/docs/src/assets/js/4.5e0d83d2.js"><link rel="prefetch" href="/docs/src/assets/js/5.52ec1bff.js"><link rel="prefetch" href="/docs/src/assets/js/6.f7f7ba67.js"><link rel="prefetch" href="/docs/src/assets/js/7.07a0e654.js"><link rel="prefetch" href="/docs/src/assets/js/8.886e1602.js"><link rel="prefetch" href="/docs/src/assets/js/9.9ec99ad1.js">
+    <link rel="stylesheet" href="/docs/src/assets/css/0.styles.a9221b09.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/src/" class="home-link router-link-active"><!----> <span class="site-name">Kyle</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/src/about/记录.html" class="nav-link">
+  记录
+</a></div><div class="nav-item"><a href="https://github.com/woodenF" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/src/about/记录.html" class="nav-link">
+  记录
+</a></div><div class="nav-item"><a href="https://github.com/woodenF" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript深入</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>插件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/src/blog/插件/使用ESlint约束代码风格.html" class="sidebar-link">使用ESlint自动格式化代码</a></li><li><a href="/docs/src/blog/插件/ESlint配置规则.html" class="active sidebar-link">ESlint的代码风格配置</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="eslint的代码风格配置"><a href="#eslint的代码风格配置" class="header-anchor">#</a> ESlint的代码风格配置</h1> <div class="language-js extra-class"><pre class="language-js"><code>rules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'no-console'</span><span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token string">'warn'</span> <span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span>
+    <span class="token string">'no-debugger'</span><span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token string">'warn'</span> <span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制使用单引号</span>
+    <span class="token string">'quotes'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token string">'single'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制使用分号</span>
+    <span class="token string">'semi'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token string">'always'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止行位空白符</span>
+    <span class="token string">'no-trailing-spaces'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制箭头函数的参数使用括号</span>
+    <span class="token string">'arrow-parens'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token string">'always'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制箭头函数箭头前后使用空格分割</span>
+    <span class="token string">'arrow-spacing'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> before<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> after<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止修改const声明的变量</span>
+    <span class="token string">'no-const-assign'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止模块重复导入</span>
+    <span class="token string">'no-duplicate-imports'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string">&quot;includeExports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止在对象中使用不必要的计算属性</span>
+    <span class="token string">'no-useless-computed-key'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止在条件中使用常量表达式</span>
+    <span class="token string">'no-constant-condition'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止在条件表达式中使用赋值语句</span>
+    <span class="token string">'no-cond-assign'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止function定义中出现重复的参数</span>
+    <span class="token string">'no-dupe-args'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止对象字面量出现重复的key</span>
+    <span class="token string">'no-dupe-keys'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁用不必要的类型转换</span>
+    <span class="token string">'no-extra-boolean-cast'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁用不必要的分号</span>
+    <span class="token string">'no-extra-semi'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止不规则的空白</span>
+    <span class="token string">'no-irregular-whitespace'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止不可达代码</span>
+    <span class="token string">'no-unreachable'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制使用isNaN()检查NaN</span>
+    <span class="token string">'use-isnan'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制数组方法的回调函数中有 return 语句</span>
+    <span class="token string">'array-callback-return'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 把 var 语句看作是在块级作用域范围之内</span>
+    <span class="token string">'block-scoped-var'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制类方法使用 this</span>
+    <span class="token string">'class-methods-use-this'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求遵循大括号约定</span>
+    <span class="token string">'curly'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求 Switch 语句中有 Default 分支</span>
+    <span class="token string">'default-case'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制使用===和!==</span>
+    <span class="token string">'eqeqeq'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止在 else 前有 return</span>
+    <span class="token string">'no-else-return'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止出现空函数, 有一行注释的函数不会被认为是空函数</span>
+    <span class="token string">'no-empty-function'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止连续的空格</span>
+    <span class="token string">'no-multi-spaces'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止new对象时不使用变量接受</span>
+    <span class="token string">'no-new'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止重新声明变量</span>
+    <span class="token string">'no-redeclare'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止自身比较</span>
+    <span class="token string">'no-self-compare'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 限制可以被抛出的异常</span>
+    <span class="token string">'no-throw-literal'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止循环条件不发生改变</span>
+    <span class="token string">'no-unmodified-loop-condition'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 大括号风格要求</span>
+    <span class="token string">'brace-style'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制使用驼峰命名</span>
+    <span class="token string">'camelcase'</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制逗号后空格，逗号前无空格</span>
+    <span class="token string">'comma-spacing'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> before<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> after<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制使用一致的缩进风格</span>
+    <span class="token string">'indent'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制对象键与冒号之间无空格，键与值之间有一个空格，值水平对齐</span>
+    <span class="token string">'key-spacing'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> beforeColon<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> afterColon<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> align<span class="token operator">:</span> <span class="token string">'value'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制关键字后无空格</span>
+    <span class="token string">'keyword-spacing'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> before<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> after<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在花括号中使用一致的空格</span>
+    <span class="token string">'object-curly-spacing'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token string">'always'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/src/blog/插件/使用ESlint约束代码风格.html" class="prev">
+        使用ESlint自动格式化代码
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/src/assets/js/app.a5a14a4f.js" defer></script><script src="/docs/src/assets/js/2.85084c8c.js" defer></script><script src="/docs/src/assets/js/19.54674d97.js" defer></script>
+  </body>
+</html>

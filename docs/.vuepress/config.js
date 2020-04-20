@@ -1,3 +1,32 @@
+const fs = require('fs')
+
+const getUriCatalog = function(uri) {
+	return new Promise((resolve, reject) => {
+		fs.readdir(uri, (err, files) => {
+			resolve(files)
+		})
+	})
+}
+
+const getCatalog = async function() {
+	let pCatalog = await getUriCatalog('./docs/blog');
+	return new Promise((resolve, reject) => {
+	 Promise.all(pCatalog.map(async (uri) => getUriCatalog(`./docs/blog/${uri}`)))
+		.then((res) => {
+			resolve( {
+				'/blog/': pCatalog.map((uri, index) => {
+					return {
+						title: uri,
+						collapsable: true,
+						children: res[index]
+					}
+				})
+			})
+		})
+	})
+
+}
+
 module.exports = {
 	// theme: 'yubisaki',
 	title: 'Kyle',
@@ -15,7 +44,7 @@ module.exports = {
 		background: `/img/`,
 		github: 'woodenF',
 		// logo: '/img/logo.png',
-		accentColor: '#ac3e40', 
+		accentColor: '#ac3e40',
 		per_page: 6,
 		// lastUpdated: 'Last Updated',
 		// date_format: 'yyyy-MM-dd HH:mm:ss',
@@ -44,6 +73,14 @@ module.exports = {
 				'JavaScript深入/从原型到原型链',
 				'JavaScript深入/call和apply的模拟实现',
 				'JavaScript深入/JavaScript的事件循环'
+			]
+		}, {
+			title: '插件',
+			collapsable: true,
+			children: [
+				'插件/使用ESlint约束代码风格',
+				'插件/ESlint配置规则',
+				
 			]
 		}]},
 		serviceWorker: {

@@ -16,6 +16,6 @@
     "leancloud-storage": "^3.11.1",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-task-lists": "^2.1.1",
-    "valine": "^1.3.4"
+    "valine": "^1.5.0"
   }
 }
